@@ -1,0 +1,672 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --font-family-1: "Open Sans", sans-serif;
+    --font-family-2: "Raleway", serif;
+    --Dark-Blue-intro-and-email-up-background: hsl(217, 28%, 15%);
+    --Dark-Blue-main-background: hsl(218, 28%, 13%);
+    --Dark-Blue-footer-background: hsl(216, 53%, 9%);
+    --Dark-Blue-testimonials-background: hsl(219, 30%, 18%);
+    --Cyan-inside-call-to-action-gradient: hsl(176, 68%, 64%);
+    --Blue-inside-call-to-action-gradient: hsl(198, 60%, 50%);
+    --Light-Red-error: hsl(0, 100%, 63%);
+    --White: hsl(0, 0%, 100%);
+    --font-size: 14px;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-size: var(--font-size);
+    font-family: var(--font-family-2);
+    background-color: var(--Dark-Blue-intro-and-email-up-background);
+}
+
+
+/* -------------------------HEADER----------------------------- */
+
+.header__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 200px;
+    padding: 75px;
+}
+
+.header__logo-img{
+    width: 175px;
+}
+
+.header__nav{
+    display: flex;
+    width: 275px;
+    justify-content: space-between;
+}
+
+.header__nav-links{
+    text-decoration: none;
+    color: var(--White);
+    font-size: 16px;
+}
+
+/* -------------------------PRIMERA SECCION----------------------------- */
+
+.first__section{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.first__section-img{
+    margin-bottom: 30px;
+}
+
+.first__section-parrafo1{
+    color:var(--White);
+    text-align: center;
+    width: 51%;
+    font-size: 35px;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+.first__section-parrafo2{
+    color: var(--White);
+    font-size: 18px;
+    text-align: center;
+    width: 35%;
+    margin-bottom: 35px;
+}
+
+.first__section-button{
+    padding: 20px 95px;
+    border: none;
+    border-radius: 50px;
+    background-image: linear-gradient(to right, hsl(176, 68%, 64%), hsl(198, 60%, 50%));
+    color: var(--White);
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: 70px;
+    cursor: pointer;
+}
+
+.first__section-button:hover{
+    background: hsl(176, 81%, 71%);
+}
+
+.first__section-background{
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    top: 590px;
+    z-index: -1;
+ 
+}
+
+.first__section-curvas{
+    width: 1505px;
+}
+
+/* -------------------------SEGUNDA SECCION----------------------------- */
+
+.second__section{
+    background-color: var(--Dark-Blue-main-background);
+    margin-top: 100px;
+}
+
+.second__section-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.second__section-info1, .second__section-info2{
+    display: flex;
+}
+
+.second__section-tarjeta{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 420px;
+    height: 255px;
+}
+
+.second__section-logo{
+    width: 65px;
+    margin-bottom: 20px;
+}
+
+.second__section-titulo{
+    color: var(--White);
+    font-size: 17px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.second__section-parrafo{
+    color: var(--White);
+    text-align: center;
+    width: 80%;
+    font-size: 12px;
+}
+
+/* -------------------------TERCERA SECCION----------------------------- */
+
+.three__section{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--Dark-Blue-main-background);
+    padding: 100px;
+}
+
+.three__section-info{
+    width: 570px;
+}
+
+.three__section-title{
+    color: var(--White);
+    width: 60%;
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.three__section-parrafo1, .three__section-parrafo2{
+    color: var(--White);
+    font-size: 13px;
+    width: 80%;
+    margin-bottom: 15px;
+}
+
+.section-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 160px;
+    border-bottom: 1px solid var(--Cyan-inside-call-to-action-gradient);
+}
+
+.three__section-link{
+    color: var(--Cyan-inside-call-to-action-gradient);
+    margin-bottom: 5px;
+    cursor: pointer;
+
+}
+
+.icon{
+    margin-left: 10px;
+    color: var(--Cyan-inside-call-to-action-gradient);
+    cursor: pointer;
+}
+
+/* -------------------------CUARTA SECCION----------------------------- */
+.section__four{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Dark-Blue-main-background);
+    height: 575px;
+}
+
+.section__four-content{
+    display: flex;
+    justify-content: space-around;
+    width: 1184px;
+}
+
+.section__four-background{
+    background-image: url(./images/bg-quotes.png);
+    background-position-y: 250px;
+}
+
+.section__four-tarjetas{
+    width: 360px;
+    height: 200px;
+    padding: 30px 20px;
+    background-color: var(--Dark-Blue-testimonials-background);
+}
+
+.section__four-parrafo{
+    color: var(--White);
+    font-size: 13px;
+    width: 89%;
+    line-height: 17px;
+    font-family: var(--font-family-2);
+    margin-bottom: 35px;
+}
+
+.section__four-image{
+    display: flex;
+    align-items: center;
+    width: 290px;
+}
+
+.section__four-img{
+    width: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.section__four-parrafo2{
+    color: var(--White);
+    font-weight: 700;
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+
+.section__four-parrafo3{
+    color: var(--White);
+    font-size: 12px;
+}
+
+/* ------------------------- SECCION REGISTRO----------------------------- */
+
+.registro{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 865px;
+    height: 270px;
+    top: 2850px;
+    right: 280px;
+    border-radius: 10px;
+    background-color: var(--Dark-Blue-intro-and-email-up-background);
+    box-shadow: 10px 10px 15px black;
+}
+
+.registro-title{
+    color: var(--White);
+    font-size: 22px;
+    margin-bottom: 30px;
+}
+
+.registro-parrafo{
+    color: var(--White);
+    font-size: 16px;
+    width: 80%;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.registro-div{
+    display: flex;
+    gap: 30px;
+}
+
+input{
+    padding: 10px 170px;
+    border-radius: 50px;
+    border: none;
+    font-size: 16px;
+    color: rgb(192, 226, 226);
+}
+
+.registro_boton{
+    padding: 0 50px;
+    border: none;
+    border-radius: 50px;
+    background-image: linear-gradient(to right, hsl(176, 68%, 64%), hsl(198, 60%, 50%));
+    color: var(--White);
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.registro_boton:hover{
+    background: hsl(176, 81%, 71%);
+}
+
+/* ------------------------- SECCION FOOTER----------------------------- */
+    .footer{
+        display: flex;
+        position: relative;
+        background-color: var(--Dark-Blue-footer-background);
+        justify-content: space-around;
+        width: 100%;
+        height: 515px;
+        padding: 230px 95px;
+    }
+
+    .logo{
+        width: 175px;
+        margin-bottom: 35px;
+    }
+
+    .footer-div{
+        display: flex;
+        width: 365px;
+    }
+
+    .icon-footer{
+        color: var(--White);
+        width: 80px;
+        margin-right: 30px;
+    }
+
+    .footer-parrafo{
+        color: var(--White);
+    }
+
+    .footer-telephone{
+        width: 180px;
+        height: 100px;
+        margin-top: 80px;
+    }
+
+    .telephone{
+        margin-left: -18px;
+    }
+
+    .telephone, .footer-email{
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+        
+    }
+
+    .icon-telephone, .icon-mail{
+        color: var(--White);
+    }
+
+    .number, .email{
+        color: var(--White);
+    }
+
+    .footer-links{
+        display: flex;
+        height: 200px;
+        margin-top: 80px;
+       
+    }
+
+    .link-1, .link-2{
+        display: block;
+        text-decoration: none;
+        width: 75px;
+        margin-right: 40px;
+        
+    }
+
+    .enlaces{
+        display: block;
+        color: var(--White);
+        text-decoration: none;
+        margin-bottom: 15px;
+    }
+
+    .footer-redes{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 30px;
+        width: 80px;
+        margin-top: 80px;
+        color: var(--White);
+        cursor: pointer;
+    }
+
+    .facebook, .twitter, .instagram{
+        font-size: 18px;
+    }
+
+
+/* ------------------------- SECCION MOBILE----------------------------- */
+
+@media (max-width: 600px){
+    .main__container{
+        width: 375px;
+        margin: auto;
+        background-color: var(--Dark-Blue-main-background);
+    }
+
+    .header__container{
+        width: 100%;
+        height: 100px;
+        padding: 0px 30px;
+    }
+    
+    .header__logo-img{
+        width: 90px;
+    }
+    
+    .header__nav{
+        display: flex;
+        width: 160px;
+    }
+    
+    .header__nav-links{
+        font-size: 14px;
+    }
+
+    /* -------------------------PRIMERA SECCION----------------------------- */
+
+.first__section-img{
+    width: 280px;
+}
+
+.first__section-img{
+    margin-bottom: 30px;
+}
+
+.first__section-parrafo1{
+    width: 75%;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 35px;
+}
+
+.first__section-parrafo2{
+    font-size: 14px;
+    width: 80%;
+}
+
+.first__section-button{
+    margin-bottom: 20px;
+}
+
+
+.first__section-background{
+    display: none;
+}
+
+/* -------------------------SEGUNDA SECCION----------------------------- */
+
+
+
+.second__section-info1, .second__section-info2{
+    display: block;
+    margin-top: 40px;
+}
+
+.second__section-tarjeta{
+    width: 400px;
+    height: 255px;
+}
+
+.second__section-logo{
+    width: 70px;
+    margin-bottom: 30px;
+}
+
+.second__section-titulo{
+    font-size: 19px;
+}
+
+.second__section-parrafo{
+    width: 80%;
+    font-size: 15px;
+}
+
+/* -------------------------TERCERA SECCION----------------------------- */
+
+.three__section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 100px;
+}
+
+.three__section-image{
+    width: 260px;
+    margin-bottom: 20px;
+}
+
+.three__section-info{
+    display: flex;
+    flex-direction: column;
+    width: 310px;
+}
+
+.three__section-title{
+    width: 85%;
+    font-size: 16px;
+}
+
+.three__section-parrafo1, .three__section-parrafo2{
+    font-size: 13px;
+    line-height: 20px;
+    width: 96.7%;
+    margin-bottom: 20px;
+}
+
+/* -------------------------CUARTA SECCION----------------------------- */
+
+.section__four-content{
+    display: block;
+    width: 100%;
+    margin-top: 240px;
+    margin-bottom: 190px;
+}
+
+
+
+.section__four-tarjetas{
+    margin: 0 auto;
+    width: 340px;
+    height: 200px;
+    margin-bottom: 35px;
+}
+
+.section__four-parrafo{
+    font-size: 12px;
+}
+
+/* ------------------------- SECCION REGISTRO----------------------------- */
+
+.registro{
+    width: 355px;
+    height: 400px;
+    top: 3200px;
+    right: 63px;
+}
+
+.registro-title{
+    font-size: 20px;
+}
+
+.registro-parrafo{
+    font-size: 14px;
+    width: 80%;
+    line-height: 20px;
+}
+
+.registro-div{
+    display: block;
+   
+}
+
+input{
+    display: block;
+    margin: auto;
+    padding: 16px 60px;
+    border-radius: 50px;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+.registro_boton{
+    display: block;
+    margin: auto;
+    padding: 16px 90px;
+  
+}
+
+/* ------------------------- SECCION FOOTER----------------------------- */
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 300px;
+    width: 375px;
+    height: 1150px;
+    padding-top: 300px;
+
+  
+}
+
+
+
+
+.footer-div{
+    width: 300px;
+}
+
+.icon-footer{
+    margin-right: 20px;
+}
+
+.footer-parrafo{
+    line-height: 20px;
+}
+
+.footer-telephone{
+    width: 180px;
+    margin-left: -110px;
+}
+
+
+
+.footer-links{
+    display: block;
+    height: 200px;
+    margin-left: -130px;
+    margin-top: 30px;
+   
+}
+
+.link-1{
+    margin-bottom: 60px;
+}
+
+.enlaces{
+    margin-bottom: 25px;
+}
+
+.footer-redes{
+    width: 100px;
+    margin-top: 190px;
+   
+}
+
+.facebook, .twitter, .instagram{
+    font-size: 25px;
+}
+    
+}
